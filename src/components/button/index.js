@@ -1,7 +1,13 @@
 import React from 'react';
 
 export default (props) => {
+
+  function handleClick(e) {
+    e.preventDefault();
+    console.log('Clicked');
+  }
+
   return (
-    <button>{props.label}</button>
+    <button onClick={handleClick}>{props.label}</button>
   )
 }
