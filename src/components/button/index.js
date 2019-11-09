@@ -1,13 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-export default (props) => {
-
+export default props => {
   function handleClick(e) {
-    e.preventDefault();
-    console.log('Clicked');
+    e.preventDefault()
+    console.log('Clicked')
   }
 
   return (
-    <button onClick={handleClick}>{props.label}</button>
+    <button className='hello' onClick={handleClick}>
+      {props.label}
+    </button>
   )
 }
