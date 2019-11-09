@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './index.css'
+import './index.scss'
 
 export default props => {
   function handleClick(e) {
