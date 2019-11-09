@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './index.css'
+
 export default props => {
   function handleClick(e) {
     e.preventDefault()
@@ -7,7 +9,7 @@ export default props => {
   }
 
   return (
-    <button className='hello' onClick={handleClick}>
+    <button className='btn' onClick={handleClick}>
       {props.label}
     </button>
   )
