@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "storybook": "start-storybook -p 59458 --ci"
+    "storybook": "start-storybook -p 59458 --ci",
+    "format": "prettier --write \"src/**/*.+(js|jsx)\""
   },
   "keywords": [],
   "author": "",
