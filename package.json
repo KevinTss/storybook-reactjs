@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@storybook/react": "^5.2.5"
+    "@babel/core": "^7.7.2",
+    "@storybook/react": "^5.2.5",
+    "babel-loader": "^8.0.6"
   },
   "dependencies": {
     "react": "^16.11.0",
