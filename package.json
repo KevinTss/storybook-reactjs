@@ -14,7 +14,7 @@
     "ui"
   ],
   "author": "Kevin Tassi",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@storybook/react": "^5.2.5",
