@@ -1,7 +1,9 @@
+$primary-background: #4caf50;
+
 .btn {
-  background-color: #4caf50;
-  border: none;
-  color: white;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -10,6 +12,17 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #318133;
+    background-color: darken(white, 10);
+  }
+
+  &.primary {
+    background-color: $primary-background;
+    border-color: $primary-background;
+    color: white;
+
+    &:hover {
+      background-color: darken($primary-background, 10);
+      border-color: darken($primary-background, 10);
+    }
   }
 }

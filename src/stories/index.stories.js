@@ -6,3 +6,4 @@ export default {
 }
 
 export const Basic = () => <Button label='Hello world' />
+export const Primary = () => <Button label='Hello world' type='primary' />

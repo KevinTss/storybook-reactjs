@@ -8,9 +8,16 @@ class Button extends Component {
     this.state = { buttonStyleClasses: 'btn' }
   }
 
-  handleClick(e) {
+  handleClick = e => {
     e.preventDefault()
-    console.log('Clicked')
+    console.log('Clicked', this)
+  }
+
+  componentDidMount() {
+    if (this.props.type) {
+      const newClass = this.state.buttonStyleClasses + ' ' + this.props.type
+      this.setState({ buttonStyleClasses: newClass })
+    }
   }
 
   render() {
