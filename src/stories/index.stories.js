@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../components/button'
 
 export default {
-  title: 'Button',
+  title: 'UI/Button',
 }
 
-export const withText = () => <Button label='Hello world' />
+export const Basic = () => <Button label='Hello world' />
