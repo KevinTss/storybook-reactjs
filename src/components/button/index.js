@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import './style.scss'
 
@@ -29,6 +30,10 @@ class Button extends Component {
       </button>
     )
   }
+}
+
+Button.propTypes = {
+  type: PropTypes.oneOf(['default', 'primary']),
 }
 
 export default Button

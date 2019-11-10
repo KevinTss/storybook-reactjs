@@ -26,6 +26,7 @@
     "style-loader": "^1.0.0"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   }
