@@ -5,6 +5,7 @@ import './style.scss'
 class Button extends Component {
   constructor(props) {
     super(props)
+    this.state = { buttonStyleClasses: 'btn' }
   }
 
   handleClick(e) {
@@ -14,7 +15,9 @@ class Button extends Component {
 
   render() {
     return (
-      <button className='btn' onClick={this.handleClick}>
+      <button
+        className={this.state.buttonStyleClasses}
+        onClick={this.handleClick}>
         {this.props.label}
       </button>
     )
