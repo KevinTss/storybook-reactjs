@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import './style.scss'
 
-export default props => {
-  function handleClick(e) {
+class Button extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  handleClick(e) {
     e.preventDefault()
     console.log('Clicked')
   }
 
-  return (
-    <button className='btn' onClick={handleClick}>
-      {props.label}
-    </button>
-  )
+  render() {
+    return (
+      <button className='btn' onClick={this.handleClick}>
+        {this.props.label}
+      </button>
+    )
+  }
 }
+
+export default Button
