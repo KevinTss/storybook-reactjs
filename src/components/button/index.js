@@ -6,7 +6,6 @@ import './style.scss'
 class Button extends Component {
   constructor(props) {
     super(props)
-    this.state = { buttonStyleClasses: 'btn' }
   }
 
   handleClick = e => {
@@ -14,18 +13,11 @@ class Button extends Component {
     console.log('Clicked', this)
   }
 
-  componentDidMount() {
-    if (this.props.type) {
-      const newClass = this.state.buttonStyleClasses + ' ' + this.props.type
-      this.setState({ buttonStyleClasses: newClass })
-    }
-  }
+  getStyleClasses = () => `btn ${this.props.type}`
 
   render() {
     return (
-      <button
-        className={this.state.buttonStyleClasses}
-        onClick={this.handleClick}>
+      <button className={this.getStyleClasses()} onClick={this.handleClick}>
         {this.props.label}
       </button>
     )
