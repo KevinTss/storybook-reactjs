@@ -1,7 +1,7 @@
 import React from 'react'
 import { withKnobs, text, select } from '@storybook/addon-knobs'
 
-import Button from '../components/button'
+import Button from '../components/button/Button'
 
 export default {
   title: 'UI',
