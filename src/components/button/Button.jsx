@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+const StyledButton = styled.button`
+  background-color: red;
+`
 
 import './style.scss'
 
@@ -17,9 +22,11 @@ class Button extends Component {
 
   render() {
     return (
-      <button className={this.getStyleClasses()} onClick={this.handleClick}>
+      <StyledButton
+        className={this.getStyleClasses()}
+        onClick={this.handleClick}>
         {this.props.label}
-      </button>
+      </StyledButton>
     )
   }
 }
