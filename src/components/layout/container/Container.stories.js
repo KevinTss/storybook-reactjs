@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 // import { withKnobs, text, select } from '@storybook/addon-knobs'
 
-import Container from '../components/layout/container/Container'
+import Container from './Container'
 
 export default {
   title: 'Layout',
